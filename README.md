@@ -28,3 +28,54 @@ It automatically detects and recognizes faces from a live webcam feed and marks 
 
 ## 🗂️ Project Structure
 
+Face_Recognition_Attendance/
+│
+├── Images/ # Folder containing images of known persons
+│ ├── Arpita.jpg
+│ ├── Rahul.jpg
+│ └── etc...
+│
+├── encode_faces.py # Script to encode faces from Images folder
+├── face_recognition_attendance.py # Main attendance system
+├── attendance.csv # Output file for attendance records
+├── encodings.pkl # Saved face encodings (auto-generated)
+├── requirements.txt # Required dependencies
+└── README.md # Project documentation
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone or Download** this repository:
+   ```bash
+   git clone https://github.com/yourusername/Face_Recognition_Attendance.git
+   cd Face_Recognition_Attendance
+pip install -r requirements.txt
+
+Add known faces:
+
+Place clear front-facing images in the Images/ folder.
+
+Example: Images/Arpita.jpg, Images/Rahul.jpg
+
+Encode faces (run once):
+
+python encode_faces.py
+
+
+Run the attendance system:
+
+python face_recognition_attendance.py
+
+
+Press q to quit webcam window.
+
+🧾 Output
+
+Attendance is saved automatically in a file named attendance.csv:
+
+Name	Time
+ARPITA	2025-11-13 11:25:34
+RAHUL	2025-11-13 11:27:12
